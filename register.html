@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Join the Academy | Pak Tigers Martial Arts and Fitness Club</title>
+<meta name="description" content="Pak Tigers Martial Arts and Fitness Club, Rawalpindi. Taekwondo and martial arts classes for adults, teenagers and kids.">
+<link rel="icon" href="logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <div class="left">
+      <a href="tel:+923190055822">Call: 0319-0055822</a>
+      <a href="mailto:summercamppkt@gmail.com">summercamppkt@gmail.com</a>
+    </div>
+    <a class="join-link" href="register.html">Admissions open: join the academy</a>
+  </div>
+</div>
+
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="index.html">
+      <img src="logo.jpg" alt="Pak Tigers logo">
+      <span><span class="name">PAK TIGERS</span><span class="sub">Martial Arts and Fitness Club</span></span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav" aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="classes.html">Classes</a></li>
+        <li><a href="coaches.html">Coaches</a></li>
+        <li><a href="locations.html">Locations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="register.html" class="nav-join active">Join Now</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="page-head">
+  <div class="wrap">
+    <p class="crumbs"><a href="index.html">Home</a> / Join</p>
+    <h1>Join the academy</h1>
+    <p>Fill in the form below. When you press send, your details go straight to our admin and we will contact you to confirm your admission.</p>
+  </div>
+</section>
+
+<main class="page-body">
+  <div class="wrap">
+
+    <form id="joinForm" class="join-form" novalidate>
+
+      <fieldset>
+        <legend>Student details</legend>
+        <div class="grid">
+          <label>Full name *
+            <input type="text" name="name" required autocomplete="name">
+          </label>
+          <label>Father / Guardian name *
+            <input type="text" name="guardian" required>
+          </label>
+          <label>Date of birth *
+            <input type="date" name="dob" required>
+          </label>
+          <label>Gender *
+            <select name="gender" required>
+              <option value="">Select</option>
+              <option>Male</option>
+              <option>Female</option>
+            </select>
+          </label>
+          <label>CNIC / B-Form number (optional)
+            <input type="text" name="cnic" inputmode="numeric" placeholder="00000-0000000-0">
+          </label>
+          <label>Blood group
+            <select name="blood">
+              <option value="">Not sure</option>
+              <option>A+</option><option>A-</option>
+              <option>B+</option><option>B-</option>
+              <option>AB+</option><option>AB-</option>
+              <option>O+</option><option>O-</option>
+            </select>
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Contact details</legend>
+        <div class="grid">
+          <label>Mobile / WhatsApp number *
+            <input type="tel" name="phone" required inputmode="tel" placeholder="03XX-XXXXXXX" autocomplete="tel">
+          </label>
+          <label>Email (optional)
+            <input type="email" name="email" autocomplete="email">
+          </label>
+          <label class="full">Home address *
+            <textarea name="address" rows="2" required autocomplete="street-address"></textarea>
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Training</legend>
+        <div class="grid">
+          <label>Preferred branch *
+            <select name="branch" required>
+              <option value="">Select</option>
+              <option>Head Quarters, Dhoke Chaudrian</option>
+              <option>Branch 2, Bahria Town</option>
+            </select>
+          </label>
+          <label>Class group *
+            <select name="group" required>
+              <option value="">Select</option>
+              <option>Adult boys (8:00 AM to 10:00 AM)</option>
+              <option>Adult females (10:00 AM to 11:00 AM)</option>
+              <option>Female teenagers (4:00 PM to 5:00 PM)</option>
+              <option>Junior kids (6:00 PM to 7:00 PM)</option>
+              <option>Senior boys (7:00 PM to 8:00 PM)</option>
+            </select>
+          </label>
+          <label>Martial arts experience
+            <select name="experience">
+              <option>Complete beginner</option>
+              <option>Some training before</option>
+              <option>Belt holder</option>
+            </select>
+          </label>
+          <label>Current belt (if any)
+            <input type="text" name="belt" placeholder="e.g. Green belt">
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Health and emergency</legend>
+        <div class="grid">
+          <label class="full">Medical conditions, injuries or allergies (write "None" if nothing)
+            <textarea name="medical" rows="2"></textarea>
+          </label>
+          <label>Emergency contact name *
+            <input type="text" name="emName" required>
+          </label>
+          <label>Emergency contact number *
+            <input type="tel" name="emPhone" required inputmode="tel" placeholder="03XX-XXXXXXX">
+          </label>
+          <label class="full">How did you hear about us?
+            <select name="source">
+              <option value="">Select</option>
+              <option>Friend or family</option>
+              <option>Facebook / Instagram</option>
+              <option>WhatsApp</option>
+              <option>Passing by the club</option>
+              <option>Other</option>
+            </select>
+          </label>
+        </div>
+      </fieldset>
+
+      <label class="agree">
+        <input type="checkbox" id="agree" required>
+        <span>I confirm that the information above is correct and I agree to follow the club rules and training safety instructions. *</span>
+      </label>
+
+      <p class="form-error" id="formError" role="alert" hidden></p>
+
+      <div class="actions">
+        <button type="submit" class="btn btn-gold" id="sendWa">Send via WhatsApp</button>
+        <button type="button" class="btn btn-line" id="sendMail">Send via Email</button>
+      </div>
+      <p class="note">Fields marked * are required. WhatsApp or your email app will open with your details already written. Just press Send there.</p>
+    </form>
+
+    <div class="thanks" id="thanks" hidden>
+      <h3>Thank you for applying</h3>
+      <p>Your details are ready to send. If WhatsApp or your email app did not open, please call us on 0319-0055822 and we will register you.</p>
+      <p><a class="btn btn-gold" href="index.html">Back to home</a></p>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap foot-grid">
+    <div class="foot-brand">
+      <img src="logo.jpg" alt="Pak Tigers logo">
+      <p>Pak Tigers Martial Arts and Fitness Club teaches Taekwondo, Bredan Fou and self-defence under certified black belt coaches in Rawalpindi.</p>
+    </div>
+    <div>
+      <h4>Quick links</h4>
+      <ul>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="classes.html">Class timings</a></li>
+        <li><a href="coaches.html">Our coaches</a></li>
+        <li><a href="locations.html">Branches</a></li>
+        <li><a href="register.html">Join the academy</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Branches</h4>
+      <ul>
+        <li>HQ: Keep Kool Market, Afshan Colony, Dhoke Chaudrian, Rawalpindi</li>
+        <li>Branch 2: Plaza 61, Linear Commercial, Bahria Safari Valley, Bahria Town, Rawalpindi</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li>Admin / HR: <a href="tel:+923190055822">0319-0055822</a></li>
+        <li>President: <a href="tel:+923335304989">0333-5304989</a></li>
+        <li>CEO / Head Coach: <a href="tel:+923086112240">0308-6112240</a></li>
+        <li><a href="mailto:summercamppkt@gmail.com">summercamppkt@gmail.com</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot-bottom">&copy; <span id="year">2026</span> Pak Tigers Martial Arts and Fitness Club, Rawalpindi. All rights reserved.</div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+  // ====== CHANGE THESE TWO IF NEEDED ======
+  // WhatsApp number that receives applications (international format, no + or spaces)
+  const WHATSAPP_NUMBER = "923190055822";   // Admin / HR: 0319-0055822
+  const EMAIL_ADDRESS   = "summercamppkt@gmail.com";
+  // ========================================
+
+  const form = document.getElementById("joinForm");
+  const errorBox = document.getElementById("formError");
+  const thanks = document.getElementById("thanks");
+
+  function val(name) {
+    const el = form.elements[name];
+    return el && el.value.trim() ? el.value.trim() : "-";
+  }
+
+  function buildMessage() {
+    return [
+      "NEW ADMISSION REQUEST - PAK TIGERS",
+      "",
+      "STUDENT",
+      "Name: " + val("name"),
+      "Father/Guardian: " + val("guardian"),
+      "Date of birth: " + val("dob"),
+      "Gender: " + val("gender"),
+      "CNIC/B-Form: " + val("cnic"),
+      "Blood group: " + val("blood"),
+      "",
+      "CONTACT",
+      "Phone: " + val("phone"),
+      "Email: " + val("email"),
+      "Address: " + val("address"),
+      "",
+      "TRAINING",
+      "Branch: " + val("branch"),
+      "Class group: " + val("group"),
+      "Experience: " + val("experience"),
+      "Current belt: " + val("belt"),
+      "",
+      "HEALTH AND EMERGENCY",
+      "Medical notes: " + val("medical"),
+      "Emergency contact: " + val("emName") + " (" + val("emPhone") + ")",
+      "Heard about us: " + val("source")
+    ].join("\n");
+  }
+
+  function check() {
+    errorBox.hidden = true;
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      errorBox.textContent = "Please fill in all the required fields marked *.";
+      errorBox.hidden = false;
+      return false;
+    }
+    return true;
+  }
+
+  function done() {
+    form.hidden = true;
+    thanks.hidden = false;
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    if (!check()) return;
+    const url = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(buildMessage());
+    window.open(url, "_blank", "noopener");
+    done();
+  });
+
+  document.getElementById("sendMail").addEventListener("click", function () {
+    if (!check()) return;
+    const url = "mailto:" + EMAIL_ADDRESS +
+      "?subject=" + encodeURIComponent("New admission request - " + val("name")) +
+      "&body=" + encodeURIComponent(buildMessage());
+    window.location.href = url;
+    done();
+  });
+</script>
+</body>
+</html>
